@@ -13,7 +13,7 @@ The approach was to use the intuitive style of date comparison that is used in G
 The features are:
 
 1. **Templated comparison periods** - Once the initial period of interest is chosen, rather than manually choose the period before, there is a range of options presented such as “Previous Period”, “Previous Month”, “Previous Year” etc
-![](https://storage.cloud.google.com/looker-date-comparison/templated-periods.png)
+![](https://storage.cloud.google.com/looker-date-comparison/templated-periods.png?raw=true)
 
 2. **Custom comparison periods** - in the situation where any of the above don’t fit what you are trying to see, then a custom previous date range may be chosen
 ![](https://storage.cloud.google.com/looker-date-comparison/custom-periods.png)
