@@ -13,17 +13,17 @@ The approach was to use the intuitive style of date comparison that is used in G
 The features are:
 
 1. **Templated comparison periods** - Once the initial period of interest is chosen, rather than manually choose the period before, there is a range of options presented such as “Previous Period”, “Previous Month”, “Previous Year” etc
-
-![](https://storage.cloud.google.com/looker-date-comparison/templated-periods.png?raw=true)
+![](screenshots/templated-periods.png)
 
 2. **Custom comparison periods** - in the situation where any of the above don’t fit what you are trying to see, then a custom previous date range may be chosen
-![](https://storage.cloud.google.com/looker-date-comparison/custom-periods.png)
+![](screenshots/custom-periods.png)
 
 3. **Any granularity** - Choose how granular you want your results to be by picking the appropriate date dimension from the dimension group
-  <img src="https://storage.cloud.google.com/looker-date-comparison/granularity.png" width="250">
+
+![](screenshots/granularity.png)
 
 4. **Multiple periods** - Choose the number of periods you would like to compare, this is only available for templated periods, e.g January this year vs January last year vs January 2 years ago etc.
-![](https://storage.cloud.google.com/looker-date-comparison/multiple-periods.png)
+![](screenshots/multiple-periods.png)
 
 ## How to use
 The process for using this in your explore is as follows:
