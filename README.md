@@ -47,3 +47,6 @@ To have this available to use in your explores and dashboards there are a few st
 2. In the view file where the date dimension you would like to be able to compare is, extend the `_date_comparison` view by adding the parameter `extends: [_date_comparison]`
 3. In the same view file, add two new dimensions, `event_date` and `event_raw`. These are simply `<your_date_dimension>_date` and `<your_date_dimension>_raw` respectively. This step is just so that naming convention used in the `_date_comparison` view works correctly
 3. In the relevant explore LookML, add in the `sql_always_where` clause defined in the model file here. Replace all instances of `<your_view_name>` with your view name.
+
+## Trouble Shooting
+
