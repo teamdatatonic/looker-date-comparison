@@ -50,3 +50,10 @@ To have this available to use in your explores and dashboards there are a few st
 
 ## Trouble Shooting
 
+If you have you connection set up to a timezone and time selected e.g. UTC, US Central Time, Looker will pass additional arguements into the SQL which will error with the existing code. This is due to the use of the Date_sub function.
+The following error will occur:
+No matching signature for function FORMAT_TIMESTAMP for argument types: STRING, DATE, STRING. Supported signature: FORMAT_TIMESTAMP(STRING, TIMESTAMP, [STRING]) at
+
+A quick fix is to add "convert_tz: no" to each field with a type: date, time, date_time
+This prevents looker from converting the database timezone to what you have set up in your connection.
+If you wish to have the database timezone converted, you will need to replace the date_sub function.
