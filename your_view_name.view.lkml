@@ -12,11 +12,6 @@ view: your_view_name {
 #---- Add in these parameters to your own view file replacing your_date_dimension
   extends: [_date_comparison]
 
-  dimension: event_date{
-    sql:  ${your_date_dimension_raw};;
-    type: date
-    hidden: yes
-  }
   dimension: event_raw{
     sql:  ${your_date_dimension_time::datetime} ;;
     type: date_raw
