@@ -50,8 +50,8 @@ To have this available to use in your explores and dashboards there are a few st
 
 ## Trouble Shooting
 
-If you have you connection set up to a timezone and time selected e.g. UTC, US Central Time, Looker will pass additional arguements into the SQL which will error with the existing code. This is due to the use of the Date_sub function.
+If you have you connection set up to a timezone and time selected e.g. UTC, US Central Time, Looker will pass additional arguements into the SQL which will error with the old code block, this is due to the use of the Date_sub function.
 The following error will occur:
 `No matching signature for function FORMAT_TIMESTAMP for argument types: STRING, DATE, STRING. Supported signature: FORMAT_TIMESTAMP(STRING, TIMESTAMP, [STRING]) at`
 
-A fix is being worked on for this bug
+Please ensure your code is up to date with our master branch, which now has implemented fixes for this.
